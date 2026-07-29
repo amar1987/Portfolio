@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "prettier": "prettier --write ."
   },
   "dependencies": {
@@ -16,7 +16,8 @@
     "react-dom": "^19"
   },
   "overrides": {
-    "postcss": "^8.5.15"
+    "postcss": "^8.5.15",
+    "sharp": "^0.35.3"
   },
   "devDependencies": {
     "@types/node": "^22",

@@ -16,6 +16,7 @@ const Card = ({ title, description, imgSrc, href, techStack }: CardProps) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- deliberate client-only mount gate to avoid SSR hydration mismatch
     setIsMounted(true);
   }, []);
 
